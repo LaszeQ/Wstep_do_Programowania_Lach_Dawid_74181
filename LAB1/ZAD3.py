@@ -1,7 +1,7 @@
 #ZAD2
 imie = "Dawid"
 kierunek = "cyberbezpieczeństwo"
-uczelnia = "WSIZ"
+uczelnia = "WSIiZ"
 print("Nazywam się " + imie +".")
 print("Studiuję kierunek " + kierunek + ".")
 print("Moja uczelnia nazywa się " + uczelnia + ".") #

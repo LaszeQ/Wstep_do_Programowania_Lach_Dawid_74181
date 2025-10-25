@@ -7,5 +7,5 @@ spalanie = float(input(f"Podaj średnie spalanie swojego samochodu (w litrach na
 zużycie_paliwa = droga / 100 * spalanie
 koszt_podróży = zużycie_paliwa * cena_paliwa
 
-print(f"Zużycie paliwa wyniesie: {zużycie_paliwa} litrów \n"f"Koszt podróży wyniesie: {koszt_podróży} zł")
+print(f"Zużycie paliwa wyniesie: {zużycie_paliwa} litrów \nKoszt podróży wyniesie: {koszt_podróży} złotych")
 

@@ -8,6 +8,7 @@ P=a*b
 
 print(f"Obwód prostokąta= {O}")
 print(f"Pole prostokąta= {P}")
+# jak upewnic sie ze user wpisuje liczby
 
 '''
 Funkcja input() pobiera dane od użytkownika, które wpisze w konsoli, w tym przypadku musi być wpisana liczba rzeczywista
