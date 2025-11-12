@@ -1,7 +1,10 @@
 #ZAD5
 
 a = float(input("Podaj długość pierwszego boku prostokąta (a): "))
+if a <= 0: print( "Wpisano nieprawidłową wartość")
 b = float(input("Podaj długość drugiego boku prostokąta (b): "))
+if b <= 0: print( "Wpisano nieprawidłową wartość")
+
 
 O=2*(a+b)
 P=a*b
