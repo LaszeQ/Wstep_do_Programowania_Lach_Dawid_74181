@@ -1,4 +1,4 @@
-
+#ZAD12
 x = float(input("Podaj wartość x: "))
 
 # a) Funkcja a(x)

@@ -1,32 +1,25 @@
-#wiek = input("Cześć, ile masz lat? ")
-#if wiek <= 0 or wiek >= 4: print
-
-# Funkcja input() pobiera dane od użytkownika z klawiatury
-# i może też od razu wyświetlać pytanie, bez potrzeby użycia print().
+# ZAD9
+cena_dziecko = 0
+cena_nastolatek= 10
+cena_dorosly = 20
+cena_student = cena_dorosly * 0.75
 
 while True:
-    try:
-        wiek = int(input("Podaj swój wiek (w pełnych latach): "))
-        if wiek < 0:
-            print("Wiek nie może być ujemny. Spróbuj ponownie.")
+    try :
+        wiek = int(input("Podaj swój wiek: "))
+        if wiek < 0 or wiek > 150:
+            print("Wpisz poprawny wiek")
             continue
         break
     except ValueError:
-        print("Podaj liczbę całkowitą!")
-
-# Dla dorosłych sprawdzimy, czy są studentami
-czy_student = "nie"
-if wiek >= 18:
-    czy_student = input("Czy jesteś studentem? (tak/nie): ").strip().lower()
-
-# Logika ustalania ceny biletu
+        print("Wpisz poprawny wiek")
 if wiek < 4:
-    cena = 0
-elif 4 <= wiek < 18:
-    cena = 10
-elif wiek >= 18 and czy_student == "tak":
-    cena = 20 * 0.75  # 25% zniżki
+    print("Wchodzisz za darmo")
+elif wiek >= 4 and wiek < 18:
+    print("Bilet kosztuje 10 złotych")
 else:
-    cena = 20
-
-print(f"\nCena biletu: {cena:.2f} zł")
+    student = input("Czy jesteś studentem? (tak/nie): ").strip().lower()
+    if student == "tak":
+        print("Twój bilet kosztuje" , int(20*0.75) ,"złotych")
+    else:
+        print("Twój bilet kosztuje 20 złotych")

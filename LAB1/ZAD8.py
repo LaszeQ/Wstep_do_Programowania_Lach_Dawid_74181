@@ -3,7 +3,7 @@ wiek = float(input("Ile masz lat? "))
 # Z: Wiek (0,150>
 
 if wiek <= 0 or wiek >= 150:
-    print( "Nie masz prawa żyć")
+    print( "Wiek jest niepoprawny")
 else:
 
 

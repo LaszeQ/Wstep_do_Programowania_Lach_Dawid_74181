@@ -1,6 +1,6 @@
+#ZAD13
 # Prosty kalkulator w Pythonie
 
-# Funkcja input() pobiera dane od użytkownika (jako tekst), więc konwertujemy je na float.
 a = float(input("Podaj pierwszą liczbę: "))
 b = float(input("Podaj drugą liczbę: "))
 

@@ -1,6 +1,7 @@
+#ZAD11
 # Program do rozwiązywania równania kwadratowego: a*x^2 + b*x + c = 0
 
-# Funkcja input() pobiera dane od użytkownika, a float() zamienia je na liczby rzeczywiste.
+
 a = float(input("Podaj współczynnik a: "))
 b = float(input("Podaj współczynnik b: "))
 c = float(input("Podaj współczynnik c: "))
@@ -19,15 +20,15 @@ if a == 0:
 else:
     # Obliczamy deltę
     delta = b**2 - 4*a*c
-    print(f"\nΔ (delta) = {delta}")
+    print(f"\n delta = {delta}")
 
     if delta > 0:
         # Dwa rozwiązania rzeczywiste
         x1 = (-b - delta**0.5) / (2*a)
         x2 = (-b + delta**0.5) / (2*a)
         print(f"Dwa rozwiązania rzeczywiste:")
-        print(f"x₁ = {x1}")
-        print(f"x₂ = {x2}")
+        print(f"x1 = {x1}")
+        print(f"x2 = {x2}")
     elif delta == 0:
         # Jedno rozwiązanie (podwójny pierwiastek)
         x = -b / (2*a)
