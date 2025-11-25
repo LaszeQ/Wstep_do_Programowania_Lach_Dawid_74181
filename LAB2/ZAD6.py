@@ -1,3 +1,4 @@
+#ZAD6
 tresc = "Python jest super"
 #A
 print(tresc[0])
