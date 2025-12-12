@@ -40,8 +40,18 @@ for i in krotka:
 print(suma_k)
 
 #C
+licznik_kt = 0
+for napis in krotka:
+    licznik_kt += napis.count('kt')
+print("c) Ilość ciągów 'kt':", licznik_kt)
 
 #D
+s = int(input("Podaj długość s do porównania: "))
+dluzsze_niz_s = 0
+for napis in krotka:
+    if len(napis) > s:
+        dluzsze_niz_s += 1
+print(f"d) Ilość ciągów dłuższych niż {s}:", dluzsze_niz_s)
 #s = input
 # for
 # if dlugosc_slowa > s

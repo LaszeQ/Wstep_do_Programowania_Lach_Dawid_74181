@@ -1,10 +1,18 @@
 #ZAD5
-zakupy={"chleb" : 7, "maslo" : 12, "pepsi" : 6, "wino" : 30}
-wartosci = zakupy.values()
-suma=sum(zakupy.values())
-print(suma)
+# Lista zakupów:
+zakupy = {
+    "Chleb": 4.50,
+    "Mleko": 3.20,
+    "Masło": 7.50,
+    "Ser": 12.00
+}
 
-klucze= zakupy.keys()
-elementy=zakupy.items()
+# Wyświetlanie i sumowanie
+suma = 0
+print("Twoja lista zakupów:")
+for produkt in zakupy:
+    cena = zakupy[produkt]
+    print(f"- {produkt}: {cena} zł")
+    suma += cena
 
-print(elementy)
+print("Razem do zapłaty:", suma, "zł")

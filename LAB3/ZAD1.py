@@ -18,5 +18,10 @@ print(ostatni)
 print(posortowane)
 
 #C
-posortowane.insert(0,"Krzysiek")
+posortowane.insert(2,"Krzysiek")
+print(posortowane)
 
+#D
+posortowane.reverse()
+imiona = posortowane * 2
+print(imiona)
