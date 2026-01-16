@@ -1,9 +1,9 @@
 def fibonacci(n):
-    fib_sequence = [0, 1]
-    while len(fib_sequence) < n:
-        fib_sequence.append(fib_sequence[-1] + fib_sequence[-2])
-    return fib_sequence
+    if n <= 0:
+        return 0
+    elif n == 1:
+        return 1
+    else:
+        return fibonacci(n - 1) + fibonacci(n - 2)
 
-# Przykład użycia
-n = int(input("Podaj liczbę elementów ciągu Fibonacciego: "))
-print(fibonacci(n))
+print(f"10-ty wyraz Fibonacciego: {fibonacci(10)}")
